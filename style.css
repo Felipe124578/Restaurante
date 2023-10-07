@@ -1,0 +1,161 @@
+body{
+    /*font-family: 'Abril Fatface', cursive;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+    animation: animation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*-------nav--------*/
+
+header, footer {
+    background: rgb(222, 235, 222);
+}
+#nav-one ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 20px;
+}
+#nav-one ul li a:hover{
+    color: rgb(50, 107, 50);
+    text-decoration: underline 5px solid;
+    transition: all 1s;
+}
+/*.navbar {
+    margin-left: 50px;
+    margin-right: 50px;
+}*/
+
+/*-------endNav-------*/
+section {
+    padding: 10px;
+}
+#hello {
+    background-color: rgb(222, 235, 222);
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.card img{
+    height: 350px;
+}
+
+#inform a {
+    color: black;
+}
+#inform a:hover {
+    color: rgb(50, 107, 50);
+    transition: all 1s;
+}
+
+#menu0 a {
+    color: black;
+}
+
+#menu0 a:hover {
+    color: rgb(50, 107, 50);
+    transition: all 1s;
+}
+
+#button {
+    margin: 10px;
+
+}
+
+#button a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#button a:hover {
+    color: rgb(50, 107, 50);
+    transition: all 1s;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer p {
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 10px;
+    
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: 2s;
+}
+
+[data-anime="top"]{
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+#dev .btn a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+#dev .btn {
+    background-color: black;
+}
+#dev .btn:hover{
+    background: white;
+}
+#dev .btn a:hover {
+    color: black;
+}
+
+
+/*-------------Media--------*/
+
+@media (min-width: 700px) {
+    #text {
+        margin-top: 15%;
+    }
+    #carouselMobile {
+        display: none;
+    }
+    #text p {
+        text-align: left;
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    #carouselDesk {
+        display: none;
+    }
+}
+
